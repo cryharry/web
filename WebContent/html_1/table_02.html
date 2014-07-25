@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	table {
+		width: 350px;
+	}
+	td {
+		border: 1px solid #000;
+	}
+	#rrr thead {
+		background-color: #3f1;
+	}
+	#rrr tbody {
+		background-color: #f00;
+	}
+	#rrr tfoot {
+		background-color: #ff0;
+	}
+/* 	#rrr th {
+		text-align: left;
+		font-weight: normal;
+	} */
+	#c_1 {
+		background-color: #00f;
+	}
+	#c_2 {
+		background-color: #777;
+	}
+	#ccc thead {
+		background-color: #3f1;
+	}
+	#c_3 {
+		background-color: #000;
+	}
+	#r_3 {
+		width: 50px;
+	}
+	#r_4 {
+		width: 30px;
+	}
+</style>
+</head>
+<body>
+	<table id="rrr">
+	<caption>가로로 지정된 css가 세로보다 우선</caption>
+		<thead>
+			<tr>
+				<th id="r_3">1</th>
+				<th>2</th>
+				<th id="r_4">3</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>4</th>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<th>7</th>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th>10</th>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+		</tfoot>
+	</table>
+	
+	<table id="ccc">
+	<colgroup>
+		<col span="2" id="c_1">
+		<col id="c_2">
+	</colgroup>
+	<caption>가로로 지정된 css가 세로보다 우선</caption>
+		<thead>
+			<tr>
+				<td>1</td>
+				<td id="c_3">2</td>
+				<td>3</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
