@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+#footer {
+	height: 100px;
+	background: url(images/shadow.png);
+	width: 971px;
+	margin: 0px auto;
+	padding-top: 20px;
+}
+
+#footer hr {
+	margin-left: 50px;
+	margin-right: 50px;
+	border: none;
+	border-bottom: 1px solid #BDBDBD;
+	margin-bottom: 20px;
+}
+
+#footer_logo {
+	float: left;
+	margin: 0px 0px 0px 50px;
+}
+
+#footer p {
+	font-size: 0.8em;
+	float: left;
+	padding-left: 60px;
+}
+
+#footer_sns {
+	float: right;
+	padding-right: 50px;
+	letter-spacing: 10px;
+}
+
+	body {
+		background: #999;
+		font-size: 12px;
+	}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body {
+		font-family: "맑은 고딕";
+	}
+	fieldset {
+		border: 5px solid #ff24a3;
+		width: 658px;
+		padding-top: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-bottom: 20px;
+		border-radius: 6px;
+	}
+	table {
+		/* border: 5px solid #FF24A3; */ 
+		/* width: */  
+		padding-left: 20px;
+		padding-top: 10px;
+	}
+	table td {
+		width: 500px;
+		border-bottom: 2px solid #D5D5D5;
+		text-align: center;
+	}
+	caption {
+		height: 40px;
+		background: #282828;
+		color: #fff;
+		font-size: 1.2em;
+		width: 580px;
+	}
+	#address {
+		width: 210px;
+		border: 1px solid #ff24a3;
+	}
+	#address_num {
+		width: 70px;
+		border: 1px solid #ff24a3;
+	}
+	#bt1 {
+		width: 100px;
+		height: 26px;
+		font-size: 0.8em;
+		border: 3px solid #ff24a3;
+		background-color: #fff;
+		border-radius: 18px;
+	}
+	#bt2 {
+		font-size: 1.0em;
+		width: 200px;
+		height: 30px;
+		border: 3px solid #ff24a3;
+		background-color: #ff24a3;
+		border-radius: 5px;
+		color: #fff;
+	}
+	#tel {
+		width: 100px;
+	}
+	#td2 {
+		text-align: left;
+	}
+	#td3 {
+		border-bottom: none;
+		text-align: right;
+	}
+	#email {
+		width: 100px;
+	}
+	input {
+		border: 1px solid #ff24a3;
+	}
+	select {
+		border: 1px solid #ff24a3;
+		height: 27px;
+		width: 60px;
+	} 
+</style>
+</head>
+<body>
+<form>
+	<fieldset>
+	<table>
+		<caption>주문자 정보입력</caption>
+		<tr>
+			<td>이름</td>
+			<td id="td2"><input type="text"></td>
+		</tr>
+		<tr>
+			<td>휴대폰</td>
+			<td id="td2">
+				<select>
+					<option>010</option>
+					<option>011</option>
+					<option>016</option>
+					<option>017</option>
+					<option>018</option>
+					<option>019</option>
+				</select>
+				 - <input type="text" id="tel"> - <input type="text" id="tel">
+			</td>
+		</tr>
+		<tr>
+			<td>이메일</td>
+			<td id="td2">
+				<input type="text" id="email">@<input type="text" id="email">
+			</td>
+		</tr>
+		<tr>
+			<td>배송주소</td>
+			<td id="td2">
+				<input type="text" id="address_num">
+				<input id="bt1" type="button" value="우편번호 찾기"><br>
+				<input type="text" id="address"><br>
+				<input type="text" id="address">
+			<td>
+		</tr>
+		<tr>
+			<td id="td3" colspan="2"><input type="button" value="제품 주문 신청 완료" id="bt2"></td>
+		</tr>
+	</table>
+	</fieldset>
+</form>
+</body>
+</html>

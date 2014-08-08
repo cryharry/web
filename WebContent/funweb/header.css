@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+#header {
+	height: 100px;
+	background: url(images/shadow.png);
+	width: 971px;
+	margin: 0px auto;
+}
+
+#header img {
+	float: left;
+	margin: 20px 0px 0px 50px;
+}
+
+#header p {
+	float: right;
+	margin: 10px 50px 0px 50px;
+}
+
+#header ul {
+	float: right;
+	clear: right;
+	margin: 10px 40px 0px 50px;
+}
+
+#header ul li {
+	float: left;
+	padding: 0px 3px;
+}
+
+#header ul li a {
+	display: block;
+	padding: 7px 7px 13px 7px;
+	color: #444;
+	/* border: 1px solid #777; */
+}
+
+#header ul li a:hover {
+	background: url(images/blue.gif);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+
+#header p {
+	word-spacing: 30px;
+}
+
+	body {
+		background: #999;
+		font-size: 12px;
+	}

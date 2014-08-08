@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/* 	input[속성 = "값"] - 동일한 속성만 인식
+	input[속성^ = "값"] - 값의 첫글자만 인식
+	input[type^ = "but"]
+	input[속성$ = "값"] - 값의 끝글자만 인식
+	input[type$ = "ton"]
+	input[속성* = "값"] - 값의 내용중 동일글자가 한개라도 있으면 인식 
+	input[type* = "utt"] */
+	
+	
+	body {
+		font-family: "맑은 고딕";
+	}
+	table {
+		width: 600px;
+		border-collapse: collapse;
+	}
+	td{
+		border-bottom: 1px solid #777;
+		padding: 10px;
+	}
+	input[type="text"] {
+		border: 1px solid pink;
+		width: 100px;
+	}
+	input[type="button"], input[type="submit"] {
+		border: 1px solid pink;
+		padding: 5px 10px;
+		background-color: pink;
+		font-size: 0.5em;
+	}
+	select {
+		border: 1px solid pink;
+		width: 100px;
+	}
+	input[type$="xt"] {
+		border: 1px solid pink;
+		width: 100px;
+		background-color: pink; 
+	}
+	input[type^="but"] {
+		border: 1px solid yellow;
+		width: 100px;
+		background-color: yellow; 
+	}
+</style>
+</head>
+<body>
+<form action="">
+	<table>
+		<tr>
+			<td>이름 </td>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<td>휴대폰 </td>
+			<td>
+				<select>
+					<option>010</option> 
+					<option>011</option> 
+					<option>019</option> 
+				</select>
+				-<input type="text">-<input type="text">
+			</td>
+		</tr>
+		<tr>
+			<td>이메일 </td>
+			<td><input type="text">@<input type="text"></td>
+		</tr>
+		<tr>
+			<td>배송주소 </td>
+			<td>
+				<input type="text"> <input type="button" value="우편번호 검색"><br>
+				<input type="text" required="required"><br>
+				<input type="text">
+			</td>
+		</tr>
+		<tr>
+			<td> </td>
+			<td><input type="submit" value="제품 주문 신청 완료"></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
