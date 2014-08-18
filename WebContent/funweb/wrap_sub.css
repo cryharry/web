@@ -49,8 +49,9 @@
 }
 
 #wrap_sub #section h1 {
-	font-size: 5em;
+	font-size: 2.5em;
 	text-transform: capitalize;
+	margin-bottom: 25px;
 }
 
 #wrap_sub #section figure {
@@ -67,3 +68,77 @@
 #wrap_sub #section p {
 	text-align: justify;
 }
+
+/* 2페이지 시작 */
+table {
+	width: 488px;
+	border-collapse: collapse;
+}
+
+td {
+	border-bottom: 1px dashed #d3d5de;
+	padding: 7px;
+}
+
+/* tr:nth-CHILD(even) td {
+		background-color: green;
+	}*/
+tr:nth-CHILD(2n) td { /* 짝수 */
+	background-color: white;
+}
+
+/* tr:nth-CHILD(odd) td {
+		background-color: red;
+	}*/
+tr:nth-CHILD(2n+1) td { /* 홀수 */
+	background-color: #f2f5ff;
+}
+
+tr:FIRST-CHILD td {
+	background-color: blue;
+	color: #fff;
+	text-transform: capitalize;
+}
+
+tr:FIRST-CHILD td:FIRST-CHILD {
+	border-radius: 7px 0px 0px 7px;
+}
+
+tr:FIRST-CHILD td:LAST-CHILD {
+	border-radius: 0px 7px 7px 0px;
+}
+
+#wrap_sub #search {
+	float: right;
+}
+
+#wrap_sub #page {
+	text-align: center;
+	clear: both;
+	word-spacing: 15px;
+	padding-top: 20px;
+}
+
+#wrap_sub #table_search {
+	width: 458px;
+	padding: 15px;
+}
+
+#wrap_sub #bt {
+	background: blue;
+	padding: 5px 15px;
+	border: none;
+	color: #fff;
+}
+
+#wrap_sub #search input[type="text"] {
+	width: 111px;
+	height: 25px;
+	border: 1px solid blue;
+}
+
+#wrap_sub #page a:hover {
+	text-decoration: underline;
+	font-weight: bold;
+}
+/* 2페이지 끝 */

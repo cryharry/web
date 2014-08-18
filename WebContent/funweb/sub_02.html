@@ -17,18 +17,21 @@
 		border-bottom: 1px dashed #d3d5de;
 		padding: 7px;
 	}
+	
 	/* tr:nth-CHILD(even) td {
 		background-color: green;
-	}
-	tr:nth-CHILD(odd) td {
-		background-color: red;
-	} */
+	}*/
 	tr:nth-CHILD(2n) td { /* 짝수 */
 		background-color: white;
 	}
+	
+	/* tr:nth-CHILD(odd) td {
+		background-color: red;
+	}*/
 	tr:nth-CHILD(2n+1) td { /* 홀수 */
 		background-color: #f2f5ff;
 	}
+	
 	tr:FIRST-CHILD td {
 		background-color: blue;
 		color: #fff;
@@ -40,6 +43,34 @@
 	tr:FIRST-CHILD td:LAST-CHILD {
 		border-radius: 0px 7px 7px 0px;
 	}
+	#wrap_sub #search {
+		float: right;
+	}
+	#wrap_sub #page {
+		text-align: center;
+		clear: both;
+		word-spacing: 15px;
+		padding-top: 20px;
+	}
+	#wrap_sub #table_search {
+		width: 458px;
+		padding: 15px;
+	}
+	#wrap_sub #bt {
+		background: blue;
+		padding: 5px 15px;
+		border: none;
+		color: #fff;
+	}
+	#wrap_sub input[type="text"] {
+		width: 111px;
+		height: 25px;
+		border: 1px solid blue;
+	}
+	#wrap_sub #page a:hover {
+		text-decoration: underline;
+		font-weight: bold;
+	} 
 </style>
 </head>
 <body>
@@ -187,6 +218,24 @@
 					<td>7</td>
 				</tr>
 			</table>
+			<div id="table_search">
+				<div id="search">
+					<input type="text"> <input id="bt" type="button" value="search">
+				</div>
+				<div id="page">
+					<a href="#">prev</a> 
+					<a href="#">1</a> 
+					<a href="#">2</a> 
+					<a href="#">3</a> 
+					<a href="#">4</a> 
+					<a href="#">5</a> 
+					<a href="#">6</a> 
+					<a href="#">7</a> 
+					<a href="#">8</a> 
+					<a href="#">9</a> 
+					<a href="#">next</a> 
+				</div>
+			</div>
 			<!-- ***바뀌는 내용 끝 -->
 		</div>
 	</div>
