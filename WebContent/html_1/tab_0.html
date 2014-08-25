@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div {
+		display: block;
+	}
+	/* div:HOVER { display: none; } */
+	/* input:checked {
+		width: 30px;
+		background: red;
+	} */
+	input:checked ~ div{ /* ~:형제관계<클래스나 아이디> +:형제관계지만 위에꺼 못봄 */
+		display: none;
+	}
+	input {
+		display: none;
+	}
+</style>
+</head>
+<body>
+	
+	<input id="aa" type="checkbox">
+	<label for="aa">클릭하면 사라짐</label>
+	<div>
+		<h2>2014년 계획</h2>
+		<p>
+			독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동
+			독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동, 독서, 운동
+		</p>
+	</div>
+</body>
+</html>

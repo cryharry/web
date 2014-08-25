@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#aside_tab div {
+		border: 1px solid #777;
+		width: 220px;
+		height: 100%;
+		overflow: hidden;
+		display: none;
+	}
+	#aside_tab input {
+		display: none;
+	}
+	#aside_tab input:nth-of-type(1):checked ~ div:nth-of-type(1) {
+		display: block;
+		background: pink;
+	}
+	#aside_tab input:nth-of-type(2):checked ~ div:nth-of-type(2) {
+		display: block;
+		background: skyblue;
+	}
+	#aside_tab section {
+		clear: both;
+		height: 33px;
+		width: 220px;
+		border: 1px solid #777;
+		border-bottom: none;
+	}
+	#aside_tab label {
+		display: block;
+		width: 110px;
+		float: left;
+		text-align: center;
+		height:33px;
+	}
+	#aside_tab label:nth-of-type(1) {
+		background: pink;
+	}
+	#aside_tab label:nth-of-type(2) {
+		background: skyblue;
+	}
+	#aside_tab li img { float: left; }
+</style>
+</head>
+<body>
+	<aside id="aside_tab">
+		<input name="tab" type="radio" id="aa" checked="checked">
+		<input name="tab" type="radio" id="bb">
+		<section class="button">
+			<label for="aa">news</label>
+			<label for="bb">notice</label>
+		</section>
+		<div id ="a_div">
+			<ul>
+				<li>
+					<a href="#"><img src="http://placehold.it/45x45" />
+						<strong>좋은 뉴스</strong>
+						<p>2014-08-22</p>
+					</a>
+				</li>
+				<li>
+					<a href="#"><img src="http://placehold.it/45x45" />
+						<strong>좋은 뉴스</strong>
+						<p>2014-08-22</p>
+					</a>
+				</li>
+				<li>
+					<a href="#"><img src="http://placehold.it/45x45" />
+						<strong>좋은 뉴스</strong>
+						<p>2014-08-22</p>
+					</a>
+				</li>
+				<li>
+					<a href="#"><img src="http://placehold.it/45x45" />
+						<strong>좋은 뉴스</strong>
+						<p>2014-08-22</p>
+					</a>
+				</li>
+				<li>
+					<a href="#"><img src="http://placehold.it/45x45" />
+						<strong>좋은 뉴스</strong>
+						<p>2014-08-22</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="b_div">
+			<ul>
+				<li>
+					<a href="#"><img src="http://placehold.it/45x45" />
+						<strong>기쁜 뉴스</strong>
+						<p>2014-08-23</p>
+					</a>
+				</li>
+				<li>
+					<a href="#"><img src="http://placehold.it/45x45" />
+						<strong>기쁜 뉴스</strong>
+						<p>2014-08-24</p>
+					</a>
+				</li>
+				<li>
+					<a href="#"><img src="http://placehold.it/45x45" />
+						<strong>기쁜 뉴스</strong>
+						<p>2014-08-25</p>
+					</a>
+				</li>
+				<li>
+					<a href="#"><img src="http://placehold.it/45x45" />
+						<strong>기쁜 뉴스</strong>
+						<p>2014-08-26</p>
+					</a>
+				</li>
+				<li>
+					<a href="#"><img src="http://placehold.it/45x45" />
+						<strong>기쁜 뉴스</strong>
+						<p>2014-08-27</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</aside> 
+</body>
+</html>

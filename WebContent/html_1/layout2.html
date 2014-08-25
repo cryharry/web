@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		font-family: "맑은 고딕";
+		width: 1000px;
+	}
+	ul {
+		list-style: none;
+	}
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+	}
+	/* ####### reset css 끝 ##### */
+	#header {
+		background: #1d4088;
+		color: #fff;
+		height: 77px;
+	}
+	#header h1 {
+		margin-left: 50px;
+		padding-top: 20px;
+	}
+	/* ####### header css 끝 ##### */
+	#nav {
+		background: #32394a;
+		color: #fff;
+		height: 35px;
+	}
+	#nav li {
+		float: left;
+		padding: 5px 15px;
+		height: 25px;
+		width: 70px;
+		text-align: center;
+		border-right: 1px solid #242a37;
+		border-left: 1px solid #5f6673;
+	}
+	#nav ul {
+		border-right: 1px solid #5f6673;
+		border-left: 1px solid #242a37;
+	}
+	/* ####### nav css 끝 ##### */
+	#article {
+		background: #71b1d1;
+		min-height: 300px;
+		height: 100%;
+		overflow: hidden;
+	}
+	#article #aside {
+		width: 200px;
+	}
+	#article #aside ul li {
+		color: #fff;
+		padding: 5px 15px;
+		height: 25px;
+		text-align: center;
+		border-top: 1px solid #8dc1d1;
+		border-bottom: 1px solid #3990bd;
+	}
+	#article #aside ul {
+		border-top: 1px solid #3990bd;
+		border-bottom: 1px solid #8dc1d1;
+	}
+	#article #section {
+		background: #fff;
+		width: 800px;
+		height: 500px;
+	}
+	/* ####### article css 끝 ##### */
+	#footer {
+		background: #000;
+		color: #fff;
+		text-align: center;
+		font-size: 0.7em;
+		height: 77px;
+		padding-top: 7px;
+	}
+</style>
+</head>
+<body>
+	<div id="header">
+		<h1>changbum</h1>
+	</div>
+	<div id="nav">
+		<!-- 첫번째 메뉴 -->
+		<ul class="left">
+			<li> 회사소개
+			<li> 제품소개
+			<li> 고객관리
+			<li> 이벤트
+			<li> 커뮤니티
+			<li> 견적서
+		</ul>
+		<!-- uuuuuu 두번째 메뉴 uuuuuuu -->
+		<ul class="right">
+			<li> 퀵메뉴
+			<li> 오시는길
+		</ul>
+	</div>
+	<!-- 본문 시작 -->
+	<div id="article">
+		<div id="aside" class="left">
+			<ul>
+				<li> 회사소개
+				<li> 제품소개
+				<li> 고객관리
+				<li> 이벤트
+				<li> 커뮤니티
+				<li> 견적서
+			</ul>
+		</div>
+		<div id="section" class="right">페이지 내용</div>
+	</div>
+	<!-- 본문 끝 -->
+	<div id="footer">cryharryk@gmail.com</div>
+</body>
+</html>

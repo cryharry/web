@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="reset.css" type="text/css" rel="stylesheet">
+<link href="header.css" type="text/css" rel="stylesheet">
+<link href="footer.css" type="text/css" rel="stylesheet">
+<link href="wrap.css" type="text/css" rel="stylesheet">
+<link href="wrap_sub.css" type="text/css" rel="stylesheet">
+<style type="text/css">
+	.history {
+		/* border-top: 5px solid green;
+		padding: 5px; */ 
+	}
+	.year_1, .year_2 {
+		/* border: 5px solid skyblue; */
+		padding: 5px;
+		float: left;
+		width: 150px;
+		height: 50px;
+	}
+	.year_1 {
+		background: url(images/company/2011.jpg) no-repeat;
+	}
+	.year_2 {
+		background: url(images/company/2010.jpg) no-repeat;
+	}
+	.year_1 span, .year_2 span {
+		display: none;
+	}
+	.purple {
+		/* border: 5px solid purple; */
+		padding: 5px;
+		float: left;
+		width: 330px;
+	}
+	.orange {
+		border: 1px #777 dotted;
+		border-radius: 10px;
+		border-top: none;
+		border-left: none;
+		margin-bottom: 15px;  
+		padding: 15px 0;
+		height: 100%;
+		overflow: hidden;
+	}
+	.orange dt {
+		/* border: 5px solid black; */
+		float: left;
+		height: 50px;
+		width: 70px;
+		font-size: 2em;
+		margin-top: -10px;
+	}
+	.orange dt.dt_100 { /* 종속선택자 */
+		height: 100px;
+	}
+	.orange dd {
+		/* border: 5px solid black; */
+		float: left;
+		width: 230px;
+		background: url(images/company/h_bullet.gif) no-repeat left center;
+		padding-left: 20px;
+	}
+	.top_line {
+		clear: both;
+		border-top: 1px solid #777; 
+	}
+</style>
+</head>
+<body>
+<!-- header 시작 -->
+<div id="header">
+	<img src="images/logo.gif">
+	<p><a href="#">login</a> | <a href="#">Join</a></p>
+	<ul>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">COMPANY</a></li>
+		<li><a href="#">SOLUTIONS</a></li>
+		<li><a href="#">CUSTOM CENTER</a></li>
+		<li><a href="#">CONTACT US</a></li>
+	</ul>
+</div>
+<!-- header 끝 -->
+<!-- 본문 시작(wrap_sub) -->
+<div id="wrap_sub">
+	<div id="sub_img">
+		<img src="images/company/sub_back.png">
+	</div>
+	<div id="article">
+		<div id="nav">
+			<ul>
+				<li><a href="#">메뉴1</a></li>
+				<li><a href="#">메뉴2</a></li>
+				<li><a href="#">메뉴3</a></li>
+				<li><a href="#">메뉴4</a></li>
+			</ul>
+		</div>
+		<div id="section">
+			<h1>welcome to itwill</h1>
+			<!-- ***바뀌는 내용 시작 -->
+			<div class="top_line"></div>
+			<div class="history">
+				<h4 class="year_1"><span>2014</span></h4>
+				<div class="purple">
+					<dl class="orange">
+						<dt>may</dt>
+						<dd>html테스트 9월 8일</dd>
+						<dd>개인 프로젝트 10월 8일</dd>
+						<dd>팀 프로젝트 11월 8일</dd>
+					</dl>
+					<dl class="orange">
+						<dt>may</dt>
+						<dd>html테스트 9월 8일</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="top_line"></div>
+			<div class="history">
+				<h4 class="year_2"><span>2013</span></h4>
+				<div class="purple">
+					<dl class="orange">
+						<dt>may</dt>
+						<dd>html테스트 9월 8일</dd>
+						<dd>개인 프로젝트 10월 8일</dd>
+						<dd>팀 프로젝트 11월 8일</dd>
+					</dl>
+					<dl class="orange">
+						<dt>may</dt>
+						<dd>html테스트 9월 8일</dd>
+						<dd>개인 프로젝트 10월 8일</dd>
+						<dd>팀 프로젝트 11월 8일</dd>
+					</dl>
+					<dl class="orange">
+						<dt class="dt_100">may</dt>
+						<dd>html테스트 9월 8일</dd>
+						<dd>개인 프로젝트 10월 8일</dd>
+						<dd>팀 프로젝트 11월 8일</dd>
+						<dd>개인 프로젝트 10월 8일</dd>
+						<dd>팀 프로젝트 11월 8일</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- ***바뀌는 내용 끝 -->
+		</div>
+	</div>
+</div>
+<!-- 본문 끝(wrap_sub) -->
+<!-- footer 시작 -->
+<div id="footer">
+	<hr>
+	<div id="footer_logo"><img src="images/under_logo.gif"></div>
+	<p>All contents Copyright 2011 FunWeb Inc. all right reserved <br>
+	Contact mail : funweb@funwebbiz.com Tel +82 64 123 4315 Fax +82 64 123 4321</p>
+	<div id="footer_sns">
+		<a href="#"><img src="images/facebook.gif"></a>
+		<a href="#"><img src="images/twitter.gif"></a>
+	</div>
+</div>
+<!-- footer 끝 -->
+</body>
+</html>

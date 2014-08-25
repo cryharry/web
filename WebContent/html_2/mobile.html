@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		font-family: "맑은 고딕";
+	}
+	#main_header {
+		height: 45px;
+		background: url(6_img/header_background.png);
+		position: relative;
+	}
+	#main_header h1 {
+		text-align: center;
+		color: #fff;
+	}
+	.left, .right {
+		display: block;
+		position: absolute;
+		/* border: 1px solid blue; */
+		background: url(6_img/sprites.png);
+		text-indent: 99999px;
+	}
+	.left {
+		background-position: left top;
+		left: 5px;
+		top: 7px;
+		width: 62px;
+		height: 32px;
+	}
+	.right {
+		background-position: right top;
+		right: 5px;
+		top: 7px;
+		width: 32px;
+		height: 32px;
+	}
+	#toggle_gnb_wrap {
+		border: 5px solid black;
+		height: 100%;
+		overflow: hidden;
+		display: none;
+		padding: 10px 0;
+	}
+	#toggle {
+		display: none;
+	}
+	#toggle:checked + #wrap #toggle_gnb_wrap {
+		display: block;
+	}
+	#toggle_gnb_wrap li {
+		float: left;
+		list-style: none;
+		/* padding: 10px; */
+		width: 25%;
+		text-align: center;
+	}
+	#top_gnb_wrap {
+		border: 1px solid black;
+		border-top: none;
+		height: 100%;
+		overflow: hidden;
+		padding: 10px 0;
+		background: #A50000;
+	}
+	#top_gnb_wrap li {
+		font-size: 1.2em;
+		float: left;
+		list-style: none;
+		width: 25%;
+		text-align: center;
+		color: #fff;
+	}
+	#bottom_gnb_wrap {
+		border-bottom: 1px solid black;
+		height: 100%;
+		overflow: hidden;
+		padding: 10px 0;
+		/* background: #A50000; */
+		position: relative;
+	}
+	#bottom_gnb_wrap li {
+		float: left;
+		list-style: none;
+		width: 20%;
+		text-align: center;
+	}
+	#bottom_gnb_wrap li:before {
+		display: block;
+		width: 1px;
+		height: 15px;
+		border-left: 1px solid #000;
+		position: absolute;
+		top: 15px;
+		/* left: -1px; */
+		content: "";
+	}
+	#bottom_gnb_wrap li:FIRST-CHILD:before {
+		border-left: none;
+	}
+</style>
+</head>
+<body>
+	<input type="checkbox" id="toggle">
+	<div id="wrap">
+		<header id="main_header">
+			<a class="left" href="#">main</a>
+			<h1>changbum</h1>
+			<label for="toggle" class="right">toggle</label>
+		</header>
+		<div id="toggle_gnb_wrap">
+			<ul>
+				<li>버튼1
+				<li>버튼2
+				<li>버튼3
+				<li>버튼4
+				<li>버튼5
+				<li>버튼6
+				<li>버튼7
+				<li>버튼8
+			</ul>
+		</div>
+		<div id="top_gnb_wrap">
+			<ul>
+				<li>버튼1
+				<li>버튼2
+				<li>버튼3
+				<li>버튼4
+			</ul>
+		</div>
+		<div id="bottom_gnb_wrap">
+			<ul>
+				<li>버튼1
+				<li>버튼2
+				<li>버튼3
+				<li>버튼4
+				<li>버튼5
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

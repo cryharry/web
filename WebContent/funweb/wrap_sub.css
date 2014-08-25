@@ -142,3 +142,49 @@ tr:FIRST-CHILD td:LAST-CHILD {
 	font-weight: bold;
 }
 /* 2페이지 끝 */
+
+/* 3페이지 시작 */
+label {
+	display: inline-block;
+	width: 110px;
+	margin-left: 50px;
+	/* background-color: #ff0; */
+}
+
+fieldset {
+	line-height: 25px;
+	border: none;
+	/* margin-bottom: 100px; */
+}
+
+legend {
+	display: block;
+	border-bottom: 1px dotted #555;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	width: 500px;
+	color: pink;
+	font-size: 1.5em;
+}
+
+.bt_1 {
+	width: 77px;
+	border: none;
+	background: #555;
+	font-size: 0.8em;
+	height: 16px;
+	padding-bottom: 5px;
+	margin-left: 50px;
+}
+
+.clear {
+	height: 100px;
+}
+
+.bt {
+	/* border: 1px solid #555; */
+	text-align: center;
+	padding: 20px;
+	width: 460px;
+}
+/* 3페이지 끝 */

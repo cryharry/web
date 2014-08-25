@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body {
+		font-family: "맑은 고딕";
+	}
+	p:FIRST-LINE {
+		color: red;
+	}
+	p:FIRST-LETTER {
+		color: #000;
+		font-size: 3em;
+	}
+	h1:BEFORE {
+		/* content: "몸에 좋은 "; */
+		content: url(6_img/bul1.gif);
+		font-size: 0.8em;
+	}
+	h1:after {
+		/* content: " 쥬스 만들기"; */
+		content: "쥬스 만들기" url(6_img/bul2.gif);
+		font-size: 0.8em;
+	}
+	p {
+		counter-increment: aa;
+		position: relative;
+	}
+	p:before {
+		content: counter(aa)" . ";
+	}
+	p:after {
+		content: "-"attr(data-page)"p";
+		font-size: 0.5em;
+		display: block;
+		position: absolute;
+		bottom: -30px;
+		right: 0;
+	}
+</style>
+</head>
+<body>
+<h1>당근</h1>
+<p data-page="52">
+창틀에서 유리, 실란트까지 KCC의 첨단기술을 적용하여 에너지를 빈틈없이 관리...
+ 
+내외장재
+
+창틀에서 유리, 실란트까지 KCC의 첨단기술을 적용하여 에너지를 빈틈없이 관리...
+</p>
+<h1>배추</h1>
+<p data-page="102">
+창틀에서 유리, 실란트까지 KCC의 첨단기술을 적용하여 에너지를 빈틈없이 관리...
+ 
+내외장재
+
+창틀에서 유리, 실란트까지 KCC의 첨단기술을 적용하여 에너지를 빈틈없이 관리...
+</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div {
+		border: 1px solid #777;
+		width: 100px;
+		height: 150px;
+		display: none;
+	}
+	#aa:checked ~ div:nth-of-type(1) {
+		background: pink;
+		display: block;
+	}
+	#bb:checked ~ div:nth-of-type(2) {
+		background: skyblue;
+		display: block;
+	}
+</style>
+</head>
+<body>
+	<input name="tab" type="radio" id="aa" checked="checked">
+	<input name="tab" type="radio" id="bb">
+	<label for="aa">news</label>
+	<label for="bb">notice</label>
+	<div>aaaaaaa</div>
+	<div>bbbbbbbbbb</div>
+</body>
+</html>
